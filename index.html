@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Описание страницы сайта.">
+  <title>Test</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<main class="patient-info">
+  <div class="container">
+    <h1 class="patient-info__h1">Информация о пациентах</h1>
+    <section class="patient-info__content">
+      <img class="patient-info__img" src="./img/main-pic.svg" alt="main-img">
+      
+      <div class="patient-info__txt">
+        <h2 class="patient-info__h2">Заполните свой профиль и получите 100 баллов</h2>
+        <p class="patient-info__description">Заполните базовую информацию о себе, чтобы мы могли подбирать для вас
+          интересные акции и статьи. Информация о пациенте используется только
+          для автозаполнения формы записи и не видна другим пользователям.</p>
+        
+        <button class="patient-info__button button">Перейти к заполнению
+          <span class="patient-info__button--coin">+100</span>
+        </button>
+      </div>
+    </section>
+  </div>
+</main>
+
+<section class="popup">
+  <div class="popup-title">
+    <h3 class="popup-title__h3">Личные данные</h3>
+    <span class="popup-title__close">
+        <span class="visually-hidden">Закрыть</span>
+      </span>
+  </div>
+  <div class="popup-container">
+    <h4 class="popup__h4">Факторы риска</h4>
+    <div class="popup-description">
+      <p class="popup-description__p">Эта информация поможет разработать для вас индивидуальный план регулярных
+        обследований, подбирать акции и полезные статьи</p>
+    </div>
+    <form class="popup-form" action="#" method="post">
+      <div class="smoke">
+        <h4 class="form-title">Курение</h4>
+        <label class="form-label" for="nosmoke">
+          <input class="form-input" id="nosmoke" type="radio" name="question-one" value="nosmoke" checked="">
+          Не курю</label>
+        <label class="form-label" for="smoke">
+          <input class="form-input" id="smoke" type="radio" name="question-one" value="smoke">
+          Курю</label>
+        <label class="form-label" for="threw">
+          <input class="form-input" id="threw" type="radio" name="question-one" value="threw">
+          Бросил(а)</label>
+      </div>
+      
+      <div class="chronic-diseases">
+        <h4 class="chronic-diseases__h4 form-title">Хронические заболевания</h4>
+        <input class="chronic-diseases__input" id="diseases" type="text" name="question-two" placeholder="Начните вводить название" required="">
+        <div class="chips-list">
+          <span class="chips-list__item">Аллергия на анальгин <span class="close" aria-label="закрыть"></span></span>
+          <span class="chips-list__item">Миопия<span class="close" aria-label="закрыть"></span></span>
+          <span class="chips-list__item">Аллергия на анальгин<span class="close" aria-label="закрыть"></span></span>
+          <span class="chips-list__item">Миопия<span class="close" aria-label="закрыть"></span></span>
+          <span class="chips-list__item">Аллергия на анальгин<span class="close" aria-label="закрыть"></span></span>
+          <span class="chips-list__item">Гайморит<span class="close" aria-label="закрыть"></span></span>
+          <span class="chips-list__item">Аллергия на анальгин<span class="close" aria-label="закрыть"></span></span>
+          <span class="chips-list__item">Миопия<span class="close" aria-label="закрыть"></span></span>
+          <span class="chips-list__item">Аллергия на анальгин<span class="close" aria-label="закрыть"></span></span>
+          <span class="chips-list__item">Миопия<span class="close" aria-label="закрыть"></span></span>
+          <span class="chips-list__item">Дипрессия<span class="close" aria-label="закрыть"></span></span>
+        </div>
+      </div>
+      
+      <div class="heredity">
+        <h4 class="heredity__h4 form-title">Наследственность</h4>
+        <p class="heredity__p">Какие из этих болезней были у ваших ближайших родственников (родителей, братьев, сестёр,
+          бабушек,
+          дедушек)? Это может влиять на вашу предрасположенность </p>
+      </div>
+      
+      <div class="checkbox">
+        <div class="checkbox__men">
+          <h4 class="checkbox__h4 form-title">Мужчины</h4>
+          <label class="form-label">
+            <input class="checkbox__input form-input" type="checkbox" name="question-three" value="nosmoke" checked="">
+            Диабет</label>
+          <label class="form-label">
+            <input class="checkbox__input form-input" type="checkbox" name="question-three" value="smoke">
+            Гипертония</label>
+          <label class="form-label">
+            <input class="checkbox__input form-input" type="checkbox" name="question-three" value="threw">
+            Рак простаты</label>
+          <label class="form-label">
+            <input class="checkbox__input form-input" type="checkbox" name="question-three" value="threw">
+            Рак толстого кишечника</label>
+          <label class="form-label">
+            <input class="checkbox__input form-input" type="checkbox" name="question-three" value="threw">
+            Меланома кожи</label>
+        </div>
+        
+        <div class="checkbox__women">
+          <h4 class="checkbox__h4 form-title">Женщины</h4>
+          <label class="form-label">
+            <input class="checkbox__input form-input" type="checkbox" name="question-three" value="nosmoke" checked="">
+            Диабет</label>
+          <label class="form-label">
+            <input class="checkbox__input form-input" type="checkbox" name="question-three" value="smoke">
+            Гипертония</label>
+          <label class="form-label">
+            <input class="checkbox__input form-input" type="checkbox" name="question-three" value="threw">
+            Рак молочной железы</label>
+          <label class="form-label">
+            <input class="checkbox__input form-input" type="checkbox" name="question-three" value="threw">
+            Рак шейки матки</label>
+          <label class="form-label">
+            <input class="checkbox__input form-input" type="checkbox" name="question-three" value="threw">
+            Рак яичников</label>
+        </div>
+      </div>
+      
+      <input class="popup-form__button button" type="submit" value="Добавить">
+    </form>
+  </div>
+</section>
+
+<div class="overlay"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
